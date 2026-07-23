@@ -12,7 +12,7 @@ let package = Package(
             targets: ["REVUPMediaMaxAdapterIronSourceTarget"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git", exact: "13.5.1"),
+        .package(url: "https://github.com/ironsource-mobile/LevelPlay-Swift-Package.git", exact: "9.4.0"),
     ],
     targets: [
         .target(
@@ -20,25 +20,19 @@ let package = Package(
             dependencies: [
                 .target(name: "REVUPMediaMaxAdapterIronSource"),
                 .target(name: "REVUPMediaMaxAdapterIronSourceMediationAdapter"),
-                .target(name: "IronSource"),
-                .product(name: "AppLovinSDK", package: "AppLovin-MAX-Swift-Package"),
+                .product(name: "UnityMediationSDK", package: "LevelPlay-Swift-Package"),
             ],
             path: "Sources"
         ),
         .binaryTarget(
             name: "REVUPMediaMaxAdapterIronSource",
-            url: "https://github.com/revup-tnk/REVUP-iOS-SDK/releases/download/1.0.0/REVUPMediaMaxAdapterIronSource.zip",
-            checksum: "32922526d7eaa2cc8952e44c1cb6b858181d55baee83be22433cc8391ac1aea8"
+            url: "https://github.com/revup-tnk/REVUP-iOS-SDK/releases/download/1.1.0/REVUPMediaMaxAdapterIronSource.zip",
+            checksum: "742347a867c43500986990bae354f8fbc73d4d710b0e13414e2e6b0c211d5ee6"
         ),
         .binaryTarget(
             name: "REVUPMediaMaxAdapterIronSourceMediationAdapter",
-            url: "https://github.com/revup-tnk/REVUP-iOS-SDK/releases/download/1.0.0/AppLovinMediationIronSourceAdapter.xcframework.zip",
-            checksum: "0131fd1de69079552e021339b6ee1fd75d9d0cb355b7ca2931dbaae5a5a55ab4"
-        ),
-        .binaryTarget(
-            name: "IronSource",
-            url: "https://github.com/revup-tnk/REVUP-iOS-SDK/releases/download/1.0.0/IronSource.xcframework.zip",
-            checksum: "1040a68bab4fda76f7e345017d9254c9ca2034fc62c2cb352f46a3267f2d532f"
+            url: "https://github.com/revup-tnk/REVUP-iOS-SDK/releases/download/1.1.0/AppLovinMediationIronSourceAdapter.xcframework.zip",
+            checksum: "00143662889262fdb4ee269c549c0032b542f2565b25efb44e6843086456477d"
         ),
     ]
 )
