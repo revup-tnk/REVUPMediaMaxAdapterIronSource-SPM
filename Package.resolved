@@ -1,12 +1,21 @@
 {
   "pins" : [
     {
-      "identity" : "levelplay-swift-package",
+      "identity" : "applovin-max-swift-package",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/ironsource-mobile/LevelPlay-Swift-Package.git",
+      "location" : "https://github.com/AppLovin/AppLovin-MAX-Swift-Package.git",
       "state" : {
-        "revision" : "2ee002119191ac75ec515a5cb9f3eec0f94d0e8f",
-        "version" : "9.4.0"
+        "revision" : "02544c3400d228cce5718e22f71f8d02787ba91e",
+        "version" : "13.6.4"
+      }
+    },
+    {
+      "identity" : "applovin-max-swift-package-ironsource",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/AppLovin/AppLovin-MAX-Swift-Package-IronSource.git",
+      "state" : {
+        "revision" : "65e4b6d57d63c8736620eb2dbd1584af7b107b77",
+        "version" : "906010000.0.0"
       }
     },
     {
@@ -14,8 +23,17 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ironsource-mobile/Unity-Ad-Quality-Swift-Package",
       "state" : {
-        "revision" : "4fa6b6029e4489ae489216108c4f7ed8378bca9d",
-        "version" : "9.4.0"
+        "revision" : "a81df68cf80e989d1d9a2c15a75070488ce123b3",
+        "version" : "9.10.0"
+      }
+    },
+    {
+      "identity" : "unity-mediation-iads-swift-package",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ironsource-mobile/Unity-Mediation-iAds-Swift-Package.git",
+      "state" : {
+        "revision" : "81522d737cfc19539ebbee4425c1dffab0463f53",
+        "version" : "9.6.1"
       }
     }
   ],

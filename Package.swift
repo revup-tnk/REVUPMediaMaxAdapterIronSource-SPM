@@ -5,34 +5,28 @@ import PackageDescription
 
 let package = Package(
     name: "REVUPMediaMaxAdapterIronSource",
-    platforms: [.iOS(.v13)],
+    platforms: [.iOS(.v15)],
     products: [
         .library(
             name: "REVUPMediaMaxAdapterIronSource",
             targets: ["REVUPMediaMaxAdapterIronSourceTarget"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/ironsource-mobile/LevelPlay-Swift-Package.git", exact: "9.4.0"),
+        .package(url: "https://github.com/AppLovin/AppLovin-MAX-Swift-Package-IronSource.git", exact: "906010000.0.0"),
     ],
     targets: [
         .target(
             name: "REVUPMediaMaxAdapterIronSourceTarget",
             dependencies: [
                 .target(name: "REVUPMediaMaxAdapterIronSource"),
-                .target(name: "REVUPMediaMaxAdapterIronSourceMediationAdapter"),
-                .product(name: "UnityMediationSDK", package: "LevelPlay-Swift-Package"),
+                .product(name: "AppLovinMediationIronSourceAdapter", package: "AppLovin-MAX-Swift-Package-IronSource"),
             ],
             path: "Sources"
         ),
         .binaryTarget(
             name: "REVUPMediaMaxAdapterIronSource",
-            url: "https://github.com/revup-tnk/REVUP-iOS-SDK/releases/download/1.1.0/REVUPMediaMaxAdapterIronSource.zip",
-            checksum: "742347a867c43500986990bae354f8fbc73d4d710b0e13414e2e6b0c211d5ee6"
-        ),
-        .binaryTarget(
-            name: "REVUPMediaMaxAdapterIronSourceMediationAdapter",
-            url: "https://github.com/revup-tnk/REVUP-iOS-SDK/releases/download/1.1.0/AppLovinMediationIronSourceAdapter.xcframework.zip",
-            checksum: "00143662889262fdb4ee269c549c0032b542f2565b25efb44e6843086456477d"
+            url: "https://github.com/revup-tnk/REVUP-iOS-SDK/releases/download/1.2.0/REVUPMediaMaxAdapterIronSource.zip",
+            checksum: "e7ae0a87d774418c35dbac8b152dc9f42b79563cf82a51730552113d6b49c065"
         ),
     ]
 )
